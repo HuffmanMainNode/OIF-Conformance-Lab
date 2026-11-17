@@ -1,0 +1,9 @@
+{
+  "id": "oif-fixture-suite-001",
+  "cases": [
+    {"id": "exact-match", "assertion": "equals", "actual": {"status": "ok"}, "expected": {"status": "ok"}},
+    {"id": "required-output-fields", "assertion": "contains_keys", "actual": {"id": "r1", "status": "ok"}, "expected": ["id", "status"]},
+    {"id": "intentional-negative-case", "assertion": "equals", "actual": "observed", "expected": "expected"}
+  ],
+  "fixture_notice": "Contains one intentional failing case to demonstrate report behavior."
+}
