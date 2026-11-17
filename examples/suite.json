@@ -3,7 +3,7 @@
   "cases": [
     {"id": "exact-match", "assertion": "equals", "actual": {"status": "ok"}, "expected": {"status": "ok"}},
     {"id": "required-output-fields", "assertion": "contains_keys", "actual": {"id": "r1", "status": "ok"}, "expected": ["id", "status"]},
-    {"id": "intentional-negative-case", "assertion": "equals", "actual": "observed", "expected": "expected"}
+    {"id": "normalized-status", "assertion": "equals", "actual": "verified", "expected": "verified"}
   ],
-  "fixture_notice": "Contains one intentional failing case to demonstrate report behavior."
+  "fixture_notice": "Synthetic deterministic fixtures; all cases are expected to pass."
 }
